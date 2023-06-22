@@ -1,4 +1,4 @@
-ALL_CLASSES = ['background', 'waterbody']
+ALL_CLASSES = ['background', 'hair']
 
 LABEL_COLORS_LIST = [
     (0, 0, 0), # Background.
