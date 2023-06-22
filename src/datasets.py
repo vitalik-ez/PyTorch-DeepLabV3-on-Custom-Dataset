@@ -8,13 +8,13 @@ from torch.utils.data import Dataset, DataLoader
 from PIL import Image
 
 def get_images(root_path):
-    train_images = glob.glob(f"{root_path}/train_images/*")
+    train_images = glob.glob(f"{root_path}/train/images/*")
     train_images.sort()
-    train_masks = glob.glob(f"{root_path}/train_masks/*")
+    train_masks = glob.glob(f"{root_path}/train/masks/*")
     train_masks.sort()
-    valid_images = glob.glob(f"{root_path}/valid_images/*")
+    valid_images = glob.glob(f"{root_path}/valid/images/*")
     valid_images.sort()
-    valid_masks = glob.glob(f"{root_path}/valid_masks/*")
+    valid_masks = glob.glob(f"{root_path}/valid/masks/*")
     valid_masks.sort()
 
     return train_images, train_masks, valid_images, valid_masks
